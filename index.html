@@ -48,8 +48,16 @@
         }
 
         ul {
-            list-style-type: none;
-            padding: 0;
+            padding-left: 20px; /* Adds indentation */
+        }
+
+        ul ul {
+            list-style-type: disc; /* Adds bullet points for nested lists */
+            margin-left: 20px; /* Indents nested lists further */
+        }
+
+        li {
+            margin-bottom: 5px; /* Adds space between list items */
         }
 
         .skills span {
@@ -94,7 +102,7 @@
         <li><i class="fab fa-linkedin"></i> LinkedIn <a href="https://www.linkedin.com/in/lionkuo/"> https://www.linkedin.com/in/lionkuo/ </a></li>
         <li><i class="far fa-envelope"></i> Email <a href="mailto:n1kuo@ucsd.edu"> n1kuo@ucsd.edu </a></li>
     </section>
-    <p><i class="far fa-file-pdf"></i> <a href="./CV.pdf" target="_blank">View My Resume (PDF)</a></p>
+    <p><i class="far fa-file-pdf"></i> <a href="./Nai_En_Kuo_Resume.pdf" target="_blank">View My Resume (PDF)</a></p>
 
     <!-- Education -->
     <section>
@@ -110,17 +118,45 @@
     <section>
         <h2>Experiences</h2>
         <ul>
-            <li><strong>5G Wireless Software Engineer Intern</strong>, MediaTek, 2024-Present</li>
-            <li><strong>Information Technology Intern</strong>, Taiwan Semiconductor Manufacturing Company, 2022</li>
-            <li><strong>Teaching Assistant of Intro. to Network Programming</strong> [<a href="https://people.cs.nycu.edu.tw/~shieyuan/course/networkProgramming/2021/" target="_blank">Syllabus</a>], National Yang Ming Chiao Tung University, 2022</li>
-            <li><strong>Teaching Assistant of Machine Learning for Networking</strong> [<a href="https://people.cs.nycu.edu.tw/~shieyuan/course/MLnetwork/2022/" target="_blank">Syllabus</a>], National Yang Ming Chiao Tung University, 2022</li>
-            <li><strong>Software Engineer Contractor</strong>, DBS Bank, 2020-2021</li>
+            <li><strong>5G Wireless Software Engineer Intern</strong>, MediaTek, 2024-Present
+                <ul>
+                    <li>3GPP Spec Study: Mainly focused on 24.501 NAS layer protocol for 5G Mobility Management.</li>
+                    <li>Backend Development: Developed more then 40 features and APIs based on Python Flask and MongoDB.</li>
+                    <li>MongoDB optimization: I optimized the data structure and querying pipeline to shorten response time to 1/3.</li>
+                </ul>
+            </li>
+            <li><strong>Information Technology Intern</strong>, Taiwan Semiconductor Manufacturing Company, 2022
+                <ul>
+                    <li>System migration: configured and built CI/CD pipeline for migrating system to Kubernetes-based OKD.</li>
+                    <li>Service development: I developed a service using Java Spring Boot incorporating CI/CD pipelines and unit
+                        testing that successfully doubled the report processing speed.</li>
+                </ul>
+            </li>
+            <li><strong>Teaching Assistant of Intro. to Network Programming</strong> [<a href="https://people.cs.nycu.edu.tw/~shieyuan/course/networkProgramming/2021/" target="_blank">Syllabus</a>], National Yang Ming Chiao Tung University, 2022
+                <ul>
+                    <li>Assisted students in understanding network programming concepts and completing assignments.</li>
+                    <li>Conducted lab sessions and provided one-on-one guidance on socket programming and protocols.</li>
+                </ul>
+            </li>
+            <li><strong>Teaching Assistant of Machine Learning for Networking</strong> [<a href="https://people.cs.nycu.edu.tw/~shieyuan/course/MLnetwork/2022/" target="_blank">Syllabus</a>], National Yang Ming Chiao Tung University, 2022
+                <ul>
+                    <li>Supported the professor by preparing teaching materials on ML algorithms for networking applications.</li>
+                    <li>Evaluated student projects and provided constructive feedback on ML model implementations.</li>
+                </ul>
+            </li>
+            <li><strong>Software Engineer Contractor</strong>, DBS Bank, 2020-2021
+                <ul>
+                    <li>Talent Data Collector: A Python script that automatically collect talent data online and generate reports using Selenium and Pandas to assist in a recruitment plan of 30 software engineers.</li>
+                    <li>Phone dialing Line Chatbot: A Flask web app for a widely used instant messaging app Line. It was built on
+                        Heroku with PostgreSQL database that helps you make a instant phone call through Twilio.</li>
+                </ul>
+            </li>
         </ul>
     </section>
 
     <!-- Competition Experience -->
     <section>
-        <h2>Competition</h2>
+        <h2>Competitions</h2>
         <ul>
             <li><strong>Mei-Chu Hackathon</strong>, 2021 - 2nd Place</li>
             <li><strong>AIS3 EOF CTF</strong>, 2021 - Finalist</li>
