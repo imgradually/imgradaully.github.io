@@ -84,6 +84,25 @@
         .links a:hover {
             text-decoration: underline;
         }
+
+        .resume-link {
+            font-size: 1.5em; /* Makes the text larger */
+            font-weight: bold; /* Makes the text bold */
+            color: #007bff; /* Adds a noticeable color */
+            text-decoration: none; /* Removes underline */
+            display: inline-block; /* Allows for padding adjustments */
+            padding: 10px 20px; /* Adds padding around the link */
+            border: 2px solid #007bff; /* Adds a border to make it stand out */
+            border-radius: 5px; /* Rounds the edges */
+            background-color: #f0f8ff; /* Adds a subtle background color */
+            transition: all 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        .resume-link:hover {
+            background-color: #007bff; /* Changes background on hover */
+            color: white; /* Changes text color on hover */
+            border-color: #0056b3; /* Changes border color on hover */
+        }
     </style>
 </head>
 <body>
@@ -102,7 +121,10 @@
         <li><i class="fab fa-linkedin"></i> LinkedIn <a href="https://www.linkedin.com/in/lionkuo/"> https://www.linkedin.com/in/lionkuo/ </a></li>
         <li><i class="far fa-envelope"></i> Email <a href="mailto:n1kuo@ucsd.edu"> n1kuo@ucsd.edu </a></li>
     </section>
-    <p><i class="far fa-file-pdf"></i> <a href="./Nai_En_Kuo_Resume.pdf" target="_blank">View My Resume (PDF)</a></p>
+    
+    <p><i class="far fa-file-pdf"></i> 
+        <a href="./Nai_En_Kuo_Resume.pdf" target="_blank" class="resume-link">View My Resume (PDF)</a>
+    </p>
 
     <!-- Education -->
     <section>
